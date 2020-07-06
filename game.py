@@ -30,7 +30,7 @@ choice = input()
 
 def choices():
 	# First Choice
-	if choice == 'make fire'.lower() or '1':
+	if choice == 'make fire'.lower():
 		print("well, it seems OK.")
 		time.sleep(2)
 		print('wait, A wolf is coming...')
@@ -157,7 +157,7 @@ def choices():
 			print('This is not in game...')
 
 	# Second Choice
-	elif choice == 'keep going'.lower() or '2':
+	elif choice == 'keep going'.lower():
 		print('You are so tired and out of energy!') 
 		time.sleep(2)
 		print('wanna sleep or keep walking?(sleep, walking)')
@@ -192,7 +192,7 @@ def choices():
 					print('Ok sleep on the ground',name)
 
 	# Third Choice
-	elif choice == 'nearest cave'.lower() or '3':
+	elif choice == 'nearest cave'.lower():
 		print('it is dark and spooky!')
 		time.sleep(2)
 		print('there is a big caves"s beard behind you')
@@ -201,18 +201,18 @@ def choices():
 		time.sleep(2)
 		print('you have 2 choies!')
 		time.sleep(2)
-		print('run --> run away and run and run and run...')
+		print('1-run --> run away and run and run and run...')
 		time.sleep(2)
-		print('sleep on the ground --> to seems you are dead and maybe beard let you go')
+		print('2-sleep on the ground --> to seems you are dead and maybe beard let you go')
 		cave_choice = input()
 
-		if cave_choice == 'run'.lower():
+		if cave_choice == 'run'.lower() or '1':
 			print('The beard is too fast')
 			time.sleep(2)
 			print('it seems he can haunt you right now!!!')
 			time.sleep(2)
 			print('You are Dead',name)
-		elif cave_choice == 'sleep on the ground'.lower():
+		elif cave_choice == 'sleep on the ground'.lower() or '2':
 			print('The beard is too crazy')
 			time.sleep(2)
 			print('He is roaring as hell...')
@@ -229,58 +229,3 @@ def choices():
 		print('Thats not in the game...')
 
 choices()
-
-
-
-
-
-
-
-
-
-# import random
-# import time
-
-# def displayIntro():
-#     print('You are in a land full dragons. in front of you')
-#     print('you see two caves. In one cave, the dragon is free')
-#     print('and will share his treasure with you. The other')
-#     print('Greedy and Hungry, and will eat you in a sight.')
-#     print()
-
-# def chooseCave():
-#     cave = ''
-#     while cave != '1' and cave !='2':
-#         print('which cave will you go into ? (1 or 2)')
-#         cave = input()
-
-#     return cave
-
-# def checkCave(chosenCave):
-#     print('You approach the cave ...')
-#     time.sleep(2)
-#     print('it is dark and spooky ...')
-#     time.sleep(2)
-#     print('A large dragon jumps out in front of you ! he open ...')
-#     print()
-#     time.sleep(2)
-
-#     friendlyCave = random.randint(1,2)
-
-#     if chosenCave == str(friendlyCave):
-#         print('his box, and Gives you his treasure!')
-#     else:
-#         print('his mouth, and Gobbles you down in one bite!')
-
-# playAgain = 'yes'
-
-# while playAgain == 'yes' or playAgain == 'y':
-
-#     displayIntro()
-
-#     caveNumber = chooseCave()
-
-#     checkCave(caveNumber)
-
-#     print('Do you want to play again? (yes or no)')
-#     playAgain = input()
