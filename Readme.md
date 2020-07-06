@@ -1,9 +1,9 @@
 ### This is a terminal game --> fun and easy to play :)
 #### You are lost in a jungle and you have to choose between some options
 #### options are listed bellow:
-- make fire (1)
-- keep going (2)
-- nearest cave (3)
+- make fire
+- keep going
+- nearest cave
 - run away
 - shout
 - fight
