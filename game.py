@@ -195,7 +195,7 @@ def choices():
 	elif choice == 'nearest cave'.lower():
 		print('it is dark and spooky!')
 		time.sleep(2)
-		print('there is a big caves"s beard behind you')
+		print('there is a big caves"s bear behind you')
 		time.sleep(2)
 		print('what are you going to do now {}!'.format(name))
 		time.sleep(2)
@@ -203,21 +203,21 @@ def choices():
 		time.sleep(2)
 		print('1-run --> run away and run and run and run...')
 		time.sleep(2)
-		print('2-sleep on the ground --> to seems you are dead and maybe beard let you go')
+		print('2-sleep on the ground --> to seems you are dead and maybe bear let you go')
 		cave_choice = input()
 
 		if cave_choice == 'run'.lower() or '1':
-			print('The beard is too fast')
+			print('The bear is too fast')
 			time.sleep(2)
 			print('it seems he can haunt you right now!!!')
 			time.sleep(2)
 			print('You are Dead',name)
 		elif cave_choice == 'sleep on the ground'.lower() or '2':
-			print('The beard is too crazy')
+			print('The bear is too crazy')
 			time.sleep(2)
 			print('He is roaring as hell...')
 			time.sleep(2)
-			print('The Beard let you go')
+			print('The Bear let you go')
 			time.sleep(2)
 			print('You are survived',name)
 		else:
